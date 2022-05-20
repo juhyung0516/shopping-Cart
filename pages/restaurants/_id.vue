@@ -13,7 +13,7 @@
         <div class="uk-card-body uk-card-small">
           <h2 class="uk-card-title">{{ dish.attributes.name }}</h2>
           <p>{{ restaurant.data.attributes.name }}</p>
-          <p>{{ dish.attributes.price }} €</p>
+          <p>{{ dish.attributes.price }} 원</p>
           <button
             class="uk-button uk-button-primary uk-margin-xlarge-top"
             @click="addToCart(dish)"

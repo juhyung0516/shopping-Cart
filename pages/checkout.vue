@@ -1,6 +1,6 @@
 <template>
   <div class="uk-container uk-container-xsmall">
-    <h1 class="uk-heading-small">Checkout</h1>
+    <h1 class="uk-heading-small">체크아웃</h1>
     <div v-if="success" class="uk-alert-success" uk-alert>
       <a class="uk-alert-close" uk-close></a>
       <p>{{ success.message }}</p>
@@ -12,7 +12,7 @@
     <Cart :checkout="false" />
     <div class="uk-margin">
       <label class="uk-form-label">
-        Address
+        주소
         <input v-model="address" class="uk-input" type="email" />
       </label>
     </div>
@@ -24,7 +24,7 @@
         class="uk-button uk-button-secondary uk-margin-top uk-width-1-1"
         @click="pay"
       >
-        Pay
+        결제
       </button>
     </div>
   </div>

@@ -10,7 +10,7 @@
         <div class="uk-width-expand">
           <p class="uk-margin-remove-bottom">{{ dish.attributes.name }}</p>
           <p class="uk-text-meta uk-margin-remove-top">
-            {{ dish.quantity }} &times; {{ dish.attributes.price }}&euro;
+            {{ dish.quantity }} &times; {{ dish.attributes.price }}원
           </p>
         </div>
         <div v-if="checkout" class="uk-width-auto">
@@ -18,19 +18,19 @@
         </div>
       </div>
       <div class="uk-grid-small uk-flex" uk-grid>
-        <div class="uk-width-expand">Subtotal</div>
-        <div>{{ price }}&euro;</div>
+        <div class="uk-width-expand">총액</div>
+        <div>{{ price }}원</div>
       </div>
       <div v-if="checkout">
         <NuxtLink
           class="uk-button uk-button-secondary uk-width-1-1"
           to="/checkout"
         >
-          Checkout
+          결제
         </NuxtLink>
       </div>
     </div>
-    <div v-else class="uk-text-meta">Empty</div>
+    <div v-else class="uk-text-meta">빈 장바구니</div>
   </div>
 </template>
 <script>
